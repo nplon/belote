@@ -9,7 +9,7 @@ Paquet :
 - Le paquet est mélangé à chaque début de partie.
 - Le paquet est coupé aléatoirement entre chaque donne.
 - La coupe du paquet doit contenir au moins 3 cartes.
-- Lorsque personne ne prends, les cartes des joueurs sont reprises dans l'ordre des joueurs à partir de la premi�re personne ayant dit "une"
+- Lorsque personne ne prends, les cartes des joueurs sont reprises dans l'ordre des joueurs à partir de la première personne ayant dit "une"
 et sont remises au dessus du paquet avant la coupe de celui-ci.
 - Lorsque les joueurs ont pris lors de la donne précédente, le paquet est reconstitué pour la donne suivante de façon à ce que le tas 
 de l'équipe du donneur se trouve sous le tas de l'équipe adverse avant la coupe
