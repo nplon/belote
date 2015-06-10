@@ -24,7 +24,7 @@ public class Belote extends GameImpl{
 	private ArrayList<Turn> turns;
 	private Card asset; // Atout
 	private int currentPlayer; // Joueur courant.
-	private int startPlayer; // Joueur d�butant la manche
+	private int startPlayer; // Joueur débutant la manche
 	private int skip;
 	private int currentTurn; // Tour de la manche
 	
@@ -242,9 +242,9 @@ public class Belote extends GameImpl{
 		if(currentTurn != 7 && currentPlayer == startPlayer){
 			//TODO Définir qui gagne le tour.
 			//TODO Attribuer le pli au joueur gagnant
-			//TODO Définir le joueur gagnant comme d�butant le prochain tour
+			//TODO Définir le joueur gagnant comme débutant le prochain tour
 			
-			// R�initialise un nouveau tour.
+			// Réinitialise un nouveau tour.
 			newTurn();
 			currentTurn++;
 			controler.eraseCenter();
@@ -322,9 +322,9 @@ public class Belote extends GameImpl{
 	}
 	
 	/**
-	 * Valide la carte jou�e, par le joueur, pour le tour donn�e
+	 * Valide la carte jouée, par le joueur, pour le tour donn�e
 	 * 
-	 * @param card Carte jou�e
+	 * @param card Carte jouée
 	 * @param player Joueur de la carte
 	 * @param turn Tour pour laquelle la carte est jou�e
 	 * @return true si la carte est valide, false sinon
@@ -357,8 +357,8 @@ public class Belote extends GameImpl{
 
 
 	/**
-	 * @param num num�ro du joueur
-	 * @return le joueur correspondant au num�ro
+	 * @param num numéro du joueur
+	 * @return le joueur correspondant au numéro
 	 */
 	public PlayerBelote getPlayer(int num) {
 		return players.get(num);

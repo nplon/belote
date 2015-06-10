@@ -1,20 +1,20 @@
 package controler.command;
 
-import controler.Command;
 import controler.ui.UiControlerBelote;
 
-public class Two implements Command {
+public class CommandOne implements Command {
 	
 	UiControlerBelote controler;
 	
-	public Two(UiControlerBelote controler) {
+	public CommandOne(UiControlerBelote controler) {
 
 		this.controler = controler;
 	}
 
 	@Override
 	public void execute() {
-		controler.skip(2);
+		controler.skip(1);
+		
 	}
 
 }

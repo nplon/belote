@@ -10,14 +10,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import main.Constant;
-import controler.Command;
-import controler.command.Play;
+import controler.command.Command;
+import controler.command.CommandPlay;
 import controler.ui.UiControlerBelote;
 import core.game.Card;
 
 public class UiCard extends JPanel implements MouseListener{
 
-	private Card card; //TODO : Faire sauter la dépendance.
+	private Card card; //TODO : Faire sauter la dï¿½pendance.
 	private JLabel content;
 	private Command command;
 	private UiControlerBelote controler;
@@ -39,7 +39,7 @@ public class UiCard extends JPanel implements MouseListener{
 	/**
 	 * Dessine une carte.
 	 * 
-	 * @param card Carte à afficher
+	 * @param card Carte ï¿½ afficher
 	 */
 	public void drawCard(Card card){
 		if(card == null){
@@ -57,7 +57,7 @@ public class UiCard extends JPanel implements MouseListener{
 	
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		command = new Play(controler, card, player);
+		command = new CommandPlay(controler, card, player);
 		command.execute();
 	}
 

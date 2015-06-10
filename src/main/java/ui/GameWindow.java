@@ -24,8 +24,8 @@ import javax.swing.JPanel;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-import controler.command.One;
-import controler.command.TakeAsset;
+import controler.command.CommandOne;
+import controler.command.CommandTakeAsset;
 import controler.ui.UiControlerBelote;
 //TODO Faire sauter les d�pendances au core.
 import core.game.Card;
@@ -108,15 +108,15 @@ public class GameWindow extends JFrame implements ActionListener
 		
 		takeQuestion = new JLabel(controler.getCurrentPlayer().getName() + " voulez vous prendre ?");
 
-		one = new UiButton(new One(controler), "one");
-		two = new UiButton(new One(controler), "two");
+		one = new UiButton(new CommandOne(controler), "one");
+		two = new UiButton(new CommandOne(controler), "two");
 		two.setVisible(false);
 		
 		actionPanel.add(takeQuestion);
 		
 		assetButtons = new ArrayList<UiButton>();
 		for (int i = 0; i < 4; i++){
-			UiButton b = new UiButton(new TakeAsset(controler, i), i+"");
+			UiButton b = new UiButton(new CommandTakeAsset(controler, i), i+"");
 			b.setVisible(false);
 			assetButtons.add(b);
 			actionPanel.add(b);

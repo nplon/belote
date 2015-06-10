@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import main.Constant;
-import controler.Command;
+import controler.command.Command;
 
 public class UiButton extends JPanel implements MouseListener{
 
